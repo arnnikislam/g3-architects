@@ -1,9 +1,43 @@
 /* google font work-sans */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
+:root {
+  --primary-color: #ff900e;
+  --background-color: rgba(255, 144, 14, 0.1);
+  --dark1: #131313;
+  --dark2: #424242;
+  --dark3: #727272;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* global font styles */
 .work-sans {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+/* header related styles */
+.header {
+  background-color: var(--background-color);
+  padding: 1.5rem 15rem;
+}
+/* navbar styles*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark2);
 }
