@@ -24,7 +24,7 @@
 /* header related styles */
 .header {
   background-color: var(--background-color);
-  padding: 1.5rem 15rem;
+  padding: 1.5rem 7rem;
 }
 /* navbar styles*/
 .navbar {
@@ -40,4 +40,17 @@
 .nav-links a {
   text-decoration: none;
   color: var(--dark2);
+}
+
+/* for mobile devices */
+@media (max-width: 576px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+  .navbar,
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
 }
