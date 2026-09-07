@@ -124,7 +124,7 @@ main > section,
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 10rem;
 }
 .feature-des-container,
 .feature-img {
@@ -160,11 +160,32 @@ main > section,
   margin-bottom: 1rem;
 }
 /* feature img */
+.feature-img {
+  position: relative;
+}
 .feature-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+}
+/* feature badge */
+.feature-badge {
+  position: absolute;
+  bottom: -5rem;
+  left: -5rem;
+}
+.feature-badge button {
+  line-height: 2rem;
+  padding: 3rem;
+}
+.feature-badge-year {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.feature-badge-experience {
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 
 /* fact section related styles*/
@@ -305,6 +326,12 @@ main > section,
   /* feature section */
   .feature-section {
     flex-direction: column;
+    gap: 2rem;
+  }
+  /* feature badge */
+  .feature-badge {
+    position: static;
+    margin-top: 0.8rem;
   }
 
   /* fact section */
@@ -354,6 +381,17 @@ main > section,
   .team-gallery,
   .team-des {
     width: 100%;
+  }
+
+  /* feature section */
+  .feature-section {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  /* feature badge */
+  .feature-badge {
+    bottom: -3rem;
+    left: -3rem;
   }
 
   /* fact section */
