@@ -118,7 +118,7 @@ main > section {
   margin: 1.5rem 0;
 }
 
-/* fact section */
+/* fact section related styles*/
 
 /* fact description */
 .fact-des {
@@ -164,6 +164,36 @@ main > section {
 .fact-card h3 {
   color: var(--dark3);
   font-size: 1.2rem;
+}
+
+/* sponsors section related styles */
+/* sponsor description */
+.sponsor-des {
+  text-align: center;
+  max-width: 540px;
+  margin: 0 auto;
+}
+.sponsor-des h2 {
+  color: var(--dark1);
+  font-weight: 700;
+  font-size: 3rem;
+}
+.sponsor-des p {
+  color: var(--dark3);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+/* sponsor logo */
+.sponsor-logo-container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5rem;
+}
+.sponsor-logo-container img {
+  width: 100%;
+  filter: grayscale(100%);
 }
 
 /* for mobile devices */
@@ -214,6 +244,18 @@ main > section {
   /* fact section */
   .fact-gallery {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .sponsor-logo-container img {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  /* sponsor section related styles */
+  /* sponsor logo */
+  .sponsor-logo-container {
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
     gap: 2rem;
   }
 }
@@ -251,5 +293,16 @@ main > section {
   .fact-gallery {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
+  }
+
+  /* sponsor description */
+  /* sponsor logo */
+  .sponsor-logo-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .sponsor-logo-container img {
+    width: 50%;
+    margin: 0 auto;
   }
 }
