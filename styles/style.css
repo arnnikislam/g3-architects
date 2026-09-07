@@ -57,6 +57,9 @@ main > section,
   text-decoration: none;
   color: var(--dark2);
 }
+.nav-links a:hover {
+  text-decoration: underline;
+}
 
 /* header banner styles */
 .banner-content {
