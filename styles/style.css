@@ -124,7 +124,7 @@ main > section,
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 10rem;
+  gap: 3rem;
 }
 .feature-des-container,
 .feature-img {
