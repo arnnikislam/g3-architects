@@ -31,7 +31,8 @@
   font-weight: 600;
   font-size: 1rem;
 }
-main > section {
+main > section,
+.footer {
   margin: 8rem 10rem;
 }
 
@@ -196,10 +197,23 @@ main > section {
   filter: grayscale(100%);
 }
 
+/* footer section */
+.footer {
+  background-color: var(--background-color);
+  border-radius: 5px;
+}
+.footer p {
+  text-align: center;
+  padding: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--dark2);
+}
 /* for mobile devices */
 @media (max-width: 576px) {
   /* for shared styles */
-  main > section {
+  main > section,
+  .footer {
     margin: 2rem 1rem;
   }
 
@@ -262,7 +276,8 @@ main > section {
 /* medium screen */
 @media (min-width: 576px) and (max-width: 996px) {
   /* for shared styles */
-  main > section {
+  main > section,
+  .footer {
     margin: 4rem 6rem;
   }
 
